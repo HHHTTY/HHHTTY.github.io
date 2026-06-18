@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://HHHTTY.github.io/sitemap.xml
