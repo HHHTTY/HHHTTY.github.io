@@ -159,8 +159,8 @@ main {
   min-height: 620px;
   padding: 96px 0 76px;
   display: grid;
-  grid-template-columns: minmax(0, 1.32fr) minmax(280px, 0.68fr);
-  gap: 58px;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 66px;
   align-items: center;
 }
 
@@ -253,10 +253,13 @@ h3 {
 
 .profile-panel {
   position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 300px;
   border: 1px solid var(--line);
   background: var(--surface);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 14px;
   box-shadow: var(--shadow);
 }
 
@@ -277,10 +280,10 @@ h3 {
 }
 
 .profile-lines {
-  margin-top: 16px;
+  margin-top: 14px;
   display: grid;
   gap: 6px;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--muted);
 }
 
@@ -602,7 +605,8 @@ h3 {
   }
 
   .profile-panel {
-    max-width: 380px;
+    justify-self: start;
+    max-width: 320px;
   }
 
   .metrics-band,
