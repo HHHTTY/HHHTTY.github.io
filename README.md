@@ -8,7 +8,6 @@ This repository is a pure static GitHub Pages site for `https://HHHTTY.github.io
 - `assets/css/styles.css`: responsive styling.
 - `assets/js/main.js`: small progressive enhancements.
 - `assets/img/`: profile photo, favicon, and social preview image.
-- `assets/docs/Haitao_Yu_CV.pdf`: downloadable CV.
 - `.nojekyll`: ensures GitHub Pages serves static assets directly.
 
 ## Local preview
