@@ -19,6 +19,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <script>
+    (() => {
+      try {
+        if (localStorage.getItem("hhhtty-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (error) {
+        document.documentElement.removeAttribute("data-theme");
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
   {
@@ -47,6 +58,55 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" data-reading-progress aria-hidden="true"></div>
+  <div class="site-tools" aria-label="Site tools">
+    <button class="tool-button" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch color theme">
+      <span class="theme-symbol" aria-hidden="true">☾</span>
+    </button>
+    <button class="tool-button" type="button" data-command-toggle aria-label="Open quick navigation" title="Open quick navigation">
+      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="command-overlay" data-command-overlay hidden>
+    <section class="command-panel" role="dialog" aria-modal="true" aria-labelledby="command-title">
+      <div class="command-header">
+        <h2 id="command-title"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Quick Jump</h2>
+        <button class="command-close" type="button" data-command-close aria-label="Close quick navigation">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <label class="command-search">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" data-command-input aria-label="Search homepage sections" placeholder="Search sections, papers, awards...">
+      </label>
+      <div class="command-list" data-command-list>
+        <a href="#about" data-command-item data-keywords="about bio hkust phd aims lab profile">
+          <strong>About Me</strong><span>Profile, advisor, academic highlights</span>
+        </a>
+        <a href="#research" data-command-item data-keywords="research multimodal ai4science molecule spectrum point cloud">
+          <strong>Research Interests</strong><span>Multimodal scientific intelligence</span>
+        </a>
+        <a href="#publications" data-command-item data-keywords="publications papers icml aaai kdd neurips">
+          <strong>Publications</strong><span>Selected papers and submissions</span>
+        </a>
+        <a href="#experience" data-command-item data-keywords="experience education huawei hkust southeast university">
+          <strong>Experience</strong><span>Education and industry timeline</span>
+        </a>
+        <a href="#awards" data-command-item data-keywords="awards honors scholarships competition prize">
+          <strong>Honors &amp; Awards</strong><span>Competitions, scholarships, university honors</span>
+        </a>
+        <a href="https://github.com/HHHTTY" target="_blank" rel="noopener noreferrer" data-command-item data-keywords="github code repository programmer">
+          <strong>GitHub</strong><span>Open profile in a new tab</span>
+        </a>
+        <button type="button" data-command-item data-copy-email data-keywords="email contact copy clipboard">
+          <strong>Copy Email</strong><span>yuhaitao1588@163.com</span>
+        </button>
+      </div>
+      <p class="command-empty" data-command-empty hidden>No matching entries.</p>
+    </section>
+  </div>
+
   <div class="page-shell">
     <aside class="profile-sidebar" id="top" aria-label="Profile sidebar">
       <a class="avatar-frame" href="#top" aria-label="Haitao Yu homepage">
