@@ -386,9 +386,9 @@ strong {
 
 .timeline-list li {
   display: grid;
-  grid-template-columns: 148px minmax(0, 1fr);
-  gap: 18px;
-  padding: 13px 0;
+  grid-template-columns: minmax(188px, 0.45fr) minmax(0, 1fr);
+  gap: 26px;
+  padding: 15px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -396,20 +396,36 @@ strong {
   border-bottom: 0;
 }
 
-.timeline-list span {
-  color: var(--rust);
-  font-weight: 800;
+.timeline-org {
+  min-width: 0;
 }
 
-.timeline-list strong,
-.timeline-list em {
+.timeline-org strong,
+.timeline-org span {
   display: block;
 }
 
-.timeline-list em {
-  margin-top: 3px;
+.timeline-org strong {
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.timeline-org span {
+  margin-top: 5px;
+  color: var(--rust);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.timeline-detail {
+  min-width: 0;
+}
+
+.timeline-detail p {
+  margin: 0;
   color: var(--muted);
-  font-style: normal;
+  line-height: 1.65;
 }
 
 .contact-section {
@@ -488,7 +504,11 @@ strong {
   .news-list li,
   .timeline-list li {
     grid-template-columns: 1fr;
-    gap: 3px;
+    gap: 7px;
+  }
+
+  .timeline-org span {
+    margin-top: 3px;
   }
 
   .publication-list {
