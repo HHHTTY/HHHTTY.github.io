@@ -53,6 +53,7 @@
       <span>Haitao Yu</span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
@@ -118,11 +119,45 @@
       </div>
     </section>
 
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading compact">
+        <p class="section-kicker">About Me 👋</p>
+        <h2 id="about-title">A concise academic profile</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p>
+            I am a Ph.D. student in the Data Science and Analytics Thrust at <strong>HKUST(GZ)</strong>, advised by <strong>Prof. Jun Xia</strong>. My research develops multimodal learning systems for scientific discovery, with a particular focus on molecular structure elucidation from spectroscopy, stable mixture-of-experts learning, and 3D point cloud understanding.
+          </p>
+          <p>
+            Before joining HKUST(GZ), I received my M.Eng. degree from <strong>Southeast University</strong>, where I worked on multimodal representation learning at PALM Lab. I also spent time at Huawei 2012 Laboratories, working on AI chip scheduling optimization, operator acceleration, and intelligent driving perception systems.
+          </p>
+        </div>
+        <div class="about-notes" aria-label="Academic profile notes">
+          <div>
+            <span>Primary direction</span>
+            <strong>Multimodal scientific intelligence</strong>
+          </div>
+          <div>
+            <span>Core modalities</span>
+            <strong>Molecules, spectra, and 3D scenes</strong>
+          </div>
+          <div>
+            <span>Research style</span>
+            <strong>Modeling + benchmarks + engineering</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="research" aria-labelledby="research-title">
       <div class="section-heading">
-        <p class="section-kicker">Research Focus 🔬</p>
+        <p class="section-kicker">Research Interests 🔬</p>
         <h2 id="research-title">Multimodal scientific intelligence across spectra, molecules, and 3D perception.</h2>
       </div>
+      <p class="research-intro">
+        I am interested in building learning systems that connect heterogeneous scientific evidence with reliable representations, interpretable structure, and scalable deployment. Current interests include:
+      </p>
       <div class="research-grid">
         <article class="focus-card">
           <span class="focus-icon"><i class="fa-solid fa-flask-vial" aria-hidden="true"></i></span>
@@ -167,6 +202,7 @@
           <div class="pub-body">
             <p class="pub-venue">ICML 2026 / CCF-A</p>
             <h3>MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework</h3>
+            <p class="pub-authors">Haitao Yu et al.</p>
             <p class="pub-meta">Role: independent first author.</p>
             <div class="pub-tags"><span>MoE</span><span>spectroscopy</span><span>molecular AI</span></div>
           </div>
@@ -176,6 +212,7 @@
           <div class="pub-body">
             <p class="pub-venue">AAAI 2024 / CCF-A</p>
             <h3>MM-Point: Multi-View Information-Enhanced Multi-Modal Self-Supervised 3D Point Cloud Understanding</h3>
+            <p class="pub-authors">Haitao Yu et al.</p>
             <p class="pub-meta">Role: independent first author.</p>
             <div class="pub-tags"><span>3D learning</span><span>self-supervised</span><span>multimodal</span></div>
           </div>
@@ -185,6 +222,7 @@
           <div class="pub-body">
             <p class="pub-venue">KDD 2026 / CCF-A</p>
             <h3>NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation</h3>
+            <p class="pub-authors">Collaborative work with Haitao Yu as a contributing author.</p>
             <p class="pub-meta">Role: third author.</p>
             <div class="pub-tags"><span>benchmark</span><span>NMR</span><span>structure elucidation</span></div>
           </div>
@@ -194,6 +232,7 @@
           <div class="pub-body">
             <p class="pub-venue">NeurIPS 2026 submission / CCF-A target</p>
             <h3>FragSpectra: Hierarchical Multi-Scale Fragment-Enhanced Molecular Understanding with Multi-modal Spectra</h3>
+            <p class="pub-authors">Haitao Yu et al.</p>
             <p class="pub-meta">Role: independent first author.</p>
             <div class="pub-tags"><span>fragments</span><span>spectra</span><span>hierarchical learning</span></div>
           </div>
@@ -203,6 +242,7 @@
           <div class="pub-body">
             <p class="pub-venue">NeurIPS 2026 submission / CCF-A target</p>
             <h3>MS-Point: Multi-Modal Hierarchical Spectral Learning for Point Cloud Understanding</h3>
+            <p class="pub-authors">Haitao Yu et al.</p>
             <p class="pub-meta">Role: independent first author.</p>
             <div class="pub-tags"><span>point cloud</span><span>spectral learning</span><span>hierarchy</span></div>
           </div>
@@ -212,6 +252,7 @@
           <div class="pub-body">
             <p class="pub-venue">ICML 2026 Workshop / NeurIPS 2026 submission</p>
             <h3>LoReC: Rethinking Large Language Models for Graph Data Analysis</h3>
+            <p class="pub-authors">Collaborative work with Haitao Yu as a contributing author.</p>
             <p class="pub-meta">Role: fourth author.</p>
             <div class="pub-tags"><span>LLM</span><span>graphs</span><span>reasoning</span></div>
           </div>
@@ -221,6 +262,7 @@
           <div class="pub-body">
             <p class="pub-venue">NeurIPS 2026 submission / CCF-A target</p>
             <h3>Towards Reasonable Molecular Structural Elucidation from Infrared Spectroscopy with Chemical Feedback</h3>
+            <p class="pub-authors">Collaborative work with Haitao Yu as a contributing author.</p>
             <p class="pub-meta">Role: third author.</p>
             <div class="pub-tags"><span>IR spectroscopy</span><span>chemical feedback</span><span>AI4Science</span></div>
           </div>
@@ -285,6 +327,27 @@
         <article class="project-item">
           <h3>Spatial Modeling SLAM for Indoor Dynamic Modeling</h3>
           <p>SEU and China Mobile Research Institute, 2021.06 - 2022.05. Built multimodal VSLAM modules and dense point-cloud mapping systems through deep algorithm improvement and deployment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section activity-section" aria-labelledby="activity-title">
+      <div class="section-heading compact">
+        <p class="section-kicker">Academic Activities 🧭</p>
+        <h2 id="activity-title">Research practice and scholarly output</h2>
+      </div>
+      <div class="activity-grid">
+        <article>
+          <h3>Benchmark and Dataset Building</h3>
+          <p>Constructing evaluation settings for spectroscopy-driven molecular understanding, including NMR, IR, MS, and multimodal spectral evidence.</p>
+        </article>
+        <article>
+          <h3>Reproducible Research Engineering</h3>
+          <p>Implementing model training, ablation, and deployment pipelines that connect algorithmic ideas with practical scientific AI systems.</p>
+        </article>
+        <article>
+          <h3>Open Collaboration</h3>
+          <p>Interested in collaborations around multimodal learning, molecular AI, benchmark design, and 3D perception 😊.</p>
         </article>
       </div>
     </section>
